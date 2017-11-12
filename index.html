@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>testpage</title>
+  <link rel="stylesheet" href="../jq/treefilter/jquery.treefilter.css">
+</head>
+<body>
+<input type="search" id="my-search" placeholder="search">
+<script src="../jq/jquery-3.2.1.min.js"></script>
+<script src="../jq/treefilter/jquery.treefilter.js"></script>
+<script>
+jQuery(function() {
+  var tree = new treefilter($("#my-tree"), {
+    // OPTIONS
+    searcher : $("input#my-search")
+  });
+});
+</script>
+<ul id="my-tree">
+  <li>
+    <div>Europe</div>
+    <ul>
+      <li>
+        <div>United Kingdom</div>
+      </li>
+      <li>
+        <div>Sweden</div>
+      </li>
+      <li>
+        <div>Germany</div>
+      </li>
+      <li>
+        <div>France</div>
+      </li>
+      <li>
+        <div>Spain</div>
+      </li>
+      <li>
+        <div>Italy</div>
+      </li>
+      <li>
+        <div>Austria</div>
+      </li>
+      <li>
+        <div>Turkey</div>
+      </li>
+      <li>
+        <div>Russia</div>
+      </li>
+      <li>
+        <div>Denmark</div>
+      </li>
+      <li>
+        <div>Finland</div>
+      </li>
+      <li>
+        <div>Iceland</div>
+      </li>
+      <li>
+        <div>Switzerland</div>
+      </li>
+      <li>
+        <div>Hungary</div>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <div>North America</div>
+    <ul>
+      <li>
+        <div>USA</div>
+      </li>
+      <li>
+        <div>Canada</div>
+      </li>
+      <li>
+        <div>Mexico</div>
+      </li>
+      <li>
+        <div>Panama</div>
+      </li>
+      <li>
+        <div>Cuba</div>
+      </li>
+    </ul>
+  </li>
+</ul>
+</body>
+</html>
